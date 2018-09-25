@@ -1,11 +1,12 @@
 README
-Project: Smash part3
+Project: Basic Linux Shell
 Author: Emanuel Hernandez
-Class: CS253 Section 003
 
 *Overview
 
-This program implements a very basic shell that works with cd and exit builtin commands and prints anything else line by line one word at a time. Also it has a history implementation where you can look at the history of commands you have typed during the lifespan of the shell. Finally it uses fork() and execvp() so it runs most commands that bash in Linux does, like "ls" "which" "ps" "top", etc.
+This program implements a very basic shell that works with cd and exit builtin commands and prints anything else line by line one word at a time. 
+Also it has a history implementation where you can look at the history of commands you have typed during the lifespan of the shell. 
+Finally it uses fork() and execvp() so it runs most commands that bash in Linux does, like "ls" "which" "ps" "top", etc.
 
 *Compiling and Using
 
