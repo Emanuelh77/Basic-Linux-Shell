@@ -1,0 +1,50 @@
+README
+Project: Smash part3
+Author: Emanuel Hernandez
+Class: CS253 Section 003
+
+*Overview
+
+This program implements a very basic shell that works with cd and exit builtin commands and prints anything else line by line one word at a time. Also it has a history implementation where you can look at the history of commands you have typed during the lifespan of the shell. Finally it uses fork() and execvp() so it runs most commands that bash in Linux does, like "ls" "which" "ps" "top", etc.
+
+*Compiling and Using
+
+To compile this program, in the smash directory type the following in the command prompt:
+$make
+or
+$make all
+or
+$make ./bin/smash
+
+After the previous, from the same directory type:
+$./bin/smash
+and this will launch the shell
+Or from the bin directory type the following:
+$./smash
+and this will also work for launching the shell
+
+Some commands to use are:
+$cd
+$history
+$which
+$ps
+$top
+$date
+
+and plenty more like the ones you would go on about using in Linux shell.
+
+To get rid of the executables and object files simply type:
+$make clean
+
+*Testing
+
+This time I used over 50 commands with the execvp function and they all ran perfectly multiple times during my testing on the executable over 100 times. I messed up some of my earlier code when attempting to add the fork() and execvp() functions but I was able to fix all of them. History function still remains working perfectly as well as the cd and exit commands from the first part of the project.
+
+*Sources used
+
+I attended to several tutoring sessions and a lot. 
+Trial and error.
+
+*Known Issues
+
+Some memory is being leaked still.
